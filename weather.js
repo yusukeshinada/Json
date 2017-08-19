@@ -9,10 +9,10 @@ var circle; // set up for object.
 var weatherAsk;
 
 function setup() {
-	var cnv = createCanvas(400, 300);
+	createCanvas(400, 300);
 	circle = new Circle();
 	weatherAsk = new WeatherAsk();
-	cnv.position(0,100);
+
 	//setup the button, 1.Access to ID in html, 2. Connect the button to mousePressed().  
 	button1 = select('#button1');
 	button1.mousePressed(weatherAsk.ask1);
